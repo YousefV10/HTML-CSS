@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(circle at center, #ffffff 10%, #e9e9e9 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Chakra Petch', sans-serif;
+
+    /* Arxa xətli naxış effekti */
+    background-image: repeating-radial-gradient(
+        circle,
+        rgba(0,0,0,0.03),
+        rgba(0,0,0,0.03) 1px,
+        transparent 1px,
+        transparent 30px
+    );
+}
+
+.card {
+    width: 420px;
+    background: #6aa6ef;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    text-align: left;
+}
+
+.card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.desc {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.desc .line {
+    width: 3px;
+    height: 25px;
+    background: #333;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px 0;
+    background: #5c97e1;
+    border: 2px solid #4177c2;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #4e89d4;
+}
